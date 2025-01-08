@@ -13,7 +13,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
 
         public LocationService(IHttpClientFactory httpClientFactory, SessionManager sessionManager)
         {
-            _httpClient = httpClientFactory.CreateClient("ApiHttpClinet");
+            _httpClient = httpClientFactory.CreateClient("ApiHttpClient");
             _sessionManager = sessionManager;
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _sessionManager.stringToken);
 
@@ -21,7 +21,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
         }
         public async Task<List<WeddingPlannerDomain.Entities.Location>> GetAllLocationAsync()
         {
-            return await _httpClient.GetFromJsonAsync<List<WeddingPlannerDomain.Entities.Location>>("./location");
+            return await _httpClient.GetFromJsonAsync<List<WeddingPlannerDomain.Entities.Location>>("/location");
 
         }
         public async Task<WeddingPlannerDomain.Entities.Location> GetLocationByIdAsnc(int id)

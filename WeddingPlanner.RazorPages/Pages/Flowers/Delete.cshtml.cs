@@ -35,7 +35,7 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
             if (res == true)
             {
                 
-                return RedirectToPage("/Index"); // Redirect after deletion
+                return RedirectToPage("Index"); // Redirect after deletion
             }
             else
             {

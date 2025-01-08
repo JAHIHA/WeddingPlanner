@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create Location"; 
 }
-@if (Model.isAdmin == false)
+@if (Model.isAdmin == true)
 {
     <h1>Create Location</h1>
     <form method="post" enctype="multipart/form-data">
@@ -30,6 +30,10 @@
             <input asp-for="Location.PostalCode" class="form-control" />
         </div>
         <div class="form-group">
+            <label asp-for="Location.Region"></label>
+            <input asp-for="Location.Region" class="form-control" />
+        </div>
+        <div class="form-group">
             <label asp-for="Location.Country"></label>
             <input asp-for="Location.Country" class="form-control" />
         </div>
@@ -39,5 +43,9 @@
         <a asp-page="Index" class="btn btn-secondary">Cancel</a>
 
     </form>
-    <h1>Aunothorized access </h1>
+    @if (Model.isAdmin == false)
+    {
+        <h1>Anothorized access </h1>
+    }
+    
 }

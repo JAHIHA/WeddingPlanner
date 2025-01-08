@@ -2,11 +2,11 @@
 @model WeddingPlanner.RazorPages.Pages.Food.DeleteFoodModel
 @{
     ViewData["Title"] = "Delete Food";
-}
+} 
 <h1>Delete Food</h1>
 
 <p>Are you sure you want to delete this food?</p>
-<p><strong>@Model.food.Name</strong> - @Model.food.Type</p>
+<p><strong>@Model.Food.Name</strong> - @Model.Food.Type</p>
 
 <form method="post">
     <button type="submit" class="btn btn-danger">Delete</button>

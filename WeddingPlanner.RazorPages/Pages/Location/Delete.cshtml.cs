@@ -30,7 +30,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
             var res = await _locationService.DeleteLocationAsync(id);
             if (res == true)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("Index");
 
             }
             else

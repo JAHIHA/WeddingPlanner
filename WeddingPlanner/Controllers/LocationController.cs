@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using WeddingPlannerApplication.Services.ServicesInterfaces;
 using WeddingPlannerDomain.Entities;
@@ -8,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace WeddingPlanner.Controllers
 {
-    [Microsoft.AspNetCore.Components.Route("/Location")]
+    [Route("/location")]
     [ApiController]
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
@@ -34,7 +33,7 @@ namespace WeddingPlanner.Controllers
         }
         [HttpPost]
         [Authorize(Policy = "AdminOnly")]
-        public async Task<ActionResult<Location>> AddLocation([FromRoute] Location location)
+        public async Task<ActionResult<Location>> AddLocation([FromBody] Location location)
         {
             if (!ModelState.IsValid)
             {
@@ -47,7 +46,7 @@ namespace WeddingPlanner.Controllers
             }
             return BadRequest("failed to add location"); 
         }
-        [HttpGet("{id")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Location>> GetById([FromRoute] int id)
         {
             var location = await _locationService.GetByIdAsync(id);
@@ -63,7 +62,7 @@ namespace WeddingPlanner.Controllers
         public async Task<ActionResult<Location>> Delete([FromRoute] int id)
         {
             var res = await _locationService.DeleteAsync(id);
-            if (!res.IsSuccess)
+            if (res.IsSuccess)
             {
                 return Ok(res.Model);
             }

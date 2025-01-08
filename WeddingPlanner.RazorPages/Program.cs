@@ -8,6 +8,8 @@ using WeddingPlannerApplication.Services.ServicesInterfaces;
 using WeddingPlannerInfrastructure.DB;
 using WeddingPlannerInfrastructure.ReposImplementation;
 using FlowerService = WeddingPlanner.RazorPages.Pages.Flowers.FlowerService;
+using FoodService = WeddingPlanner.RazorPages.Pages.Food.FoodService;
+using LocationService = WeddingPlanner.RazorPages.Pages.Location.LocationService;
 
 var builder = WebApplication.CreateBuilder(args);
 

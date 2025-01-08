@@ -16,13 +16,12 @@ namespace WeddingPlanner.RazorPages.Pages.Food
         }
 
         [BindProperty]
-
-        public WeddingPlannerDomain.Entities.Food food { get; set; }
+        public WeddingPlannerDomain.Entities.Food Food { get; set; }
 
         public async Task<IActionResult> OneGetAsync(int id)
         {
-            food = await _foodService.GetFoodByIdAsync(id);
-            if (food == null)
+            Food = await _foodService.GetFoodByIdAsync(id);
+            if (Food == null)
             {
                 return NotFound();
             }
@@ -34,7 +33,7 @@ namespace WeddingPlanner.RazorPages.Pages.Food
             var res = await _foodService.DeleteFoodAsync(id);
             if (res == true)
             {
-                return RedirectToPage("/Index"); 
+                return RedirectToPage("Index"); 
             }
             else
             {
