@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create Food"; 
 }
-@if (@Model.isAdmin == false)
+@if (@Model.isAdmin == true)
 {
     <h1>Create Food</h1>
 
@@ -29,10 +29,10 @@
         <a asp-page="Index" class="btn btn-secondary">Cancel</a>
 
     </form>
-    <h1>Aunothorized access </h1>
-}
-@if (@Model.isAdmin == true)
-{
+    @if (@Model.isAdmin == false)
+    {
+        <h1>Anothorized access </h1>
 
-
+    }
+    
 }

@@ -15,6 +15,7 @@
                 <th>StreetNumber</th>
                 <th>PostalCode</th>
                 <th>City</th>
+                <th>Region</th>
                 <th>Country</th>
             </tr>
         </thead>
@@ -27,13 +28,14 @@
                     <td>@location.StreetName</td>
                     <td>@location.PostalCode</td>
                     <td>@location.City</td>
+                    <td>@location.Region</td>
                     <td>@location.Country</td>
                     <td>
                         <a asp-page="/location/view" asp-route-id="@location.Id" class="btn btn-info">View</a>
                         @if (@Model.isAdmin == true)
                         {
-                            <a asp-page="/flowers/update" asp-route-id="@location.Id" class="btn btn-warning">Edit</a>
-                            <a asp-page="/flowers/delete" asp-route-id="@location.Id" class="btn btn-danger">Delete</a>
+                            <a asp-page="/location/update" asp-route-id="@location.Id" class="btn btn-warning">Edit</a>
+                            <a asp-page="/location/delete" asp-route-id="@location.Id" class="btn btn-danger">Delete</a>
                         }
                     </td>
                 </tr>
@@ -42,7 +44,7 @@
     </table>
     @if (@Model.isAdmin == true)
     {
-        <a asp-page="/flowers/create" class="btn btn-primary">Add New Location</a>
+        <a asp-page="/location/create" class="btn btn-primary">Add New Location</a>
     }
 }
 

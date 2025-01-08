@@ -12,7 +12,7 @@ namespace WeddingPlanner.RazorPages.Pages.Food
 
         public FoodService(IHttpClientFactory httpClientFactory, SessionManager sessionManager)
         {
-            _httpClient = httpClientFactory.CreateClient("ApiHttpClinet"); 
+            _httpClient = httpClientFactory.CreateClient("ApiHttpClient"); 
             _sessionManager = sessionManager;
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _sessionManager.stringToken);
 

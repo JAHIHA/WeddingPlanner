@@ -37,7 +37,7 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
 
             if (ImageFile != null)
             {
-                var allowedExtensions = new[] { "image/jpeg", "image/png", "image/gif" };
+                var allowedExtensions = new[] { "image/jpeg", "image/png", "image/gif", "image/jpg" };
                 if (!allowedExtensions.Contains(ImageFile.ContentType))
                 {
                     // Handle invalid file type

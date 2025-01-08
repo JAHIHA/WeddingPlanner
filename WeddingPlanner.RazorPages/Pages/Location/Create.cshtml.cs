@@ -15,6 +15,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
         public CreateLocationModel(LocationService locationService, SessionManager sessionManager)
         {
             _locationService = locationService;
+            _sessionManager = sessionManager;
         }
         [BindProperty]
         public WeddingPlannerDomain.Entities.Location Location { get; set; }
@@ -32,7 +33,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
             Location.Id = 0; 
             if (ImageFile != null)
             {
-                var allowedExtensions = new[] { "image/jpeg", "image/png", "image/gif" }; 
+                var allowedExtensions = new[] { "image/jpeg", "image/png", "image/gif", "image/jpg" }; 
                 if (!allowedExtensions.Contains(ImageFile.ContentType))
                 {
                     ModelState.AddModelError("ImageFile", "Please upload a valid image file (JPEG, PNG, GIF).");

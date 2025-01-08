@@ -7,7 +7,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.Controllers
 
 {
-    [Route("/Food")]
+    [Route("/food")]
     [ApiController]
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
@@ -30,7 +30,7 @@ namespace WeddingPlanner.Controllers
         }
         [HttpPost]
         [Authorize(Policy = "AdminOnly")]
-        public async Task<ActionResult<Food>> AddFood([FromRoute] Food food)
+        public async Task<ActionResult<Food>> AddFood([FromBody] Food food)
         {
             if(!ModelState.IsValid)
             {

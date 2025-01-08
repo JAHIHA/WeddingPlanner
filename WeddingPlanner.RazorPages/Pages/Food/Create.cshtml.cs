@@ -36,7 +36,7 @@ namespace WeddingPlanner.RazorPages.Pages.Food
 
             if (ImageFile !=null)
             {
-                var allowedExtentions = new[] { "image/jpeg\", \"image/png\", \"image/gif" };
+                var allowedExtentions = new[] { "image/jpeg", "image/png", "image/gif", "image/jpg" };
                 if (!allowedExtentions.Contains(ImageFile.ContentType))
                 {
                     ModelState.AddModelError("ImageFile", "please uplode a valid image file( JPEG, PNG, GIF).");

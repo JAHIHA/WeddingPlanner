@@ -12,7 +12,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
 
         public ViewLocationModel(LocationService locationService)
         {
-            locationService = locationService; 
+            _locationService = locationService; 
         }
 
         public WeddingPlannerDomain.Entities.Location Location { get; set; }
@@ -25,7 +25,7 @@ namespace WeddingPlanner.RazorPages.Pages.Location
             {
                 return NotFound();
             }
-            location = location;
+            Location = location;
             return Page(); 
         }
     }
