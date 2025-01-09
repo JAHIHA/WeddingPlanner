@@ -7,11 +7,17 @@
 
     ViewData["Title"] = "User Details";
 }
-
+@if (@Model.isAdmin != true){
 <h1>user details</h1>
 <p>@Model.User.Email</p>
 
 <p>Id: @Model.User.Id</p>
 
 
-<a asp-page="Index" class="btn btn-secondary">Back to List</a>
+<a asp-page="./Index" class="btn btn-secondary">Back to Home</a>
+<a asp-page="Update" class="btn btn-secondary">Change your info</a>
+}
+@if (@Model.isAdmin == true){
+    <a asp-page="Index" class="btn btn-secondary">See Users</a>
+    
+}
