@@ -11,7 +11,7 @@ using WeddingPlannerInfrastructure.DB;
 namespace WeddingPlannerInfrastructure.ReposImplementation
 {
     public class FoodRepo : IFoodRepo
-    {
+    {// Repo for Food with CRUD  methods
         private readonly AppDbContext _dbContext;
 
         public FoodRepo(AppDbContext dbContext)

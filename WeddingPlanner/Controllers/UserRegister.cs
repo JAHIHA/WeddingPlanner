@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.Controllers
 {
     public class UserRegister : Controller
-    {
+    {//Controller for user register separated from CRUD for easy navigation
         private readonly IUserService _userService;
         public UserRegister( IUserService userService)
         {

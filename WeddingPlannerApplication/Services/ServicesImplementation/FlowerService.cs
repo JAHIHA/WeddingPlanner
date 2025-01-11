@@ -10,7 +10,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlannerApplication.Services.ServicesImplementation
 {
     public class FlowerService : IFlowerService
-    {
+    {// Services for Flower with CRUD  methods
         private readonly IFlowerRepo _flowerRepo;
         public FlowerService(IFlowerRepo flowerRepo)
         {

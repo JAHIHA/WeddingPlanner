@@ -11,7 +11,7 @@ using WeddingPlannerInfrastructure.DB;
 namespace WeddingPlannerInfrastructure.ReposImplementation
 {
     public class AdminRepo:IAdminRepo
-    {
+    {// Repo for Admin with CRUD and FindbyEmail method
 
         private readonly AppDbContext _dbContext;
 

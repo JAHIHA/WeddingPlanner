@@ -9,9 +9,9 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesInterfaces
 {
     public interface IUserService
-    {
-  
-            Task<List<User>> ListAsync();
+    {// Interfaces-service for User with CRUD, verify Password and FindbyEmail methods
+
+        Task<List<User>> ListAsync();
             Task<ActionResponse<User>> AddAsync(User newUser);
             Task<ActionResponse<User>> UpdateAsync(int id, User updateUser);
             Task<ActionResponse<User>> DeleteAsync(int id);

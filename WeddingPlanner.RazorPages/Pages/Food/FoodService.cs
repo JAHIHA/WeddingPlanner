@@ -6,7 +6,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class FoodService
-    {
+    {//Services for Food that connect to the controller
         private readonly HttpClient _httpClient;
         public readonly SessionManager _sessionManager; 
 

@@ -8,7 +8,7 @@ namespace WeddingPlanner.RazorPages.Pages.Auth
 {
     public class AuthService
     {
-
+        // authentication Services with hasshed password for register and login
         private readonly HttpClient _httpClient;
 
         public AuthService(IHttpClientFactory httpClientFactory)

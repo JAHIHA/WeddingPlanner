@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class UpdateModel : PageModel
-    {
+    {// Updates the properties of a User
         private readonly UserServiceR _userService;
         private readonly AuthService _authService;
         public UpdateModel(UserServiceR userService, AuthService authService)

@@ -6,7 +6,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class DeleteModel : PageModel
-    {
+    {//Deletes a User
         private readonly UserServiceR _userService;
 
         public DeleteModel(UserServiceR userService)

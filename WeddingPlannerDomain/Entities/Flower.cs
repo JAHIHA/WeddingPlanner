@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WeddingPlannerDomain
-{
+{//Model for Flower
     public class Flower : Item
     {
         public string Color { get; set; }

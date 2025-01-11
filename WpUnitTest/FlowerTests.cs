@@ -10,7 +10,7 @@ using Xunit;
 namespace WpUnitTest
 {
     public class FlowerServiceTests
-        {
+        {//Mock tests for Flower
             private readonly Mock<IFlowerRepo> _flowerRepoMock;
             private readonly FlowerService _flowerService;
 

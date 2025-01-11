@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.RepositoriesInterfaces
 {
     public interface IAdminRepo
-    {
+    {//Interface Repo for Admin
         Task<List<Admin>> ListAsync();
         Task<Admin> AddAsync(Admin newAdmin);
         Task<Admin> UpdateAsync(int id, Admin updatedAdmin);

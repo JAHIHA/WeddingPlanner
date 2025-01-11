@@ -12,7 +12,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesImplementation
 {
     public class UserService : IUserService
-    {
+    {// Services for User with CRUD, verify Password and FindbyEmail methods
         private readonly IUserRepo _userRepo;
         public UserService(IUserRepo userRepo)
         {

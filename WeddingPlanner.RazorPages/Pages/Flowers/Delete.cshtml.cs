@@ -7,7 +7,7 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
 {
 
     public class DeleteFlowerModel : PageModel
-    {
+    {//Deletes a Flower
         private readonly FlowerService _flowerService;
 
         public DeleteFlowerModel(FlowerService flowerService)

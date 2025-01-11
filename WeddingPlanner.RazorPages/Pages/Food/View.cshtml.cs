@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class ViewFoodModel : PageModel
-    {
+    {//View a food's details
         private readonly FoodService _foodService;
         public ViewFoodModel(FoodService foodService)
         {

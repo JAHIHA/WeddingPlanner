@@ -11,7 +11,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesImplementation
 {
     public class LocationService : ILocationService
-    {
+    {// Services for Location with CRUD  methods
         private readonly ILocationRepo _locationRepo;
         public LocationService(ILocationRepo locationRepo)
         {

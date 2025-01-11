@@ -8,7 +8,7 @@ using WeddingPlannerDomain;
 using WeddingPlannerDomain.Entities;
 
 namespace WeddingPlannerInfrastructure.DB
-{
+{// Set the database sets to create models in the database and auto increment the id
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)

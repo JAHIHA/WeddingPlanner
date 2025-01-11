@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WeddingPlannerDomain.Entities
-{
+{//´Model for Food
     public class Food : Item
     {
         public bool Vegetarian { get; set; }

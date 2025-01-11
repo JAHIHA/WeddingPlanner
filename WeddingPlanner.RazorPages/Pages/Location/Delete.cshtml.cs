@@ -6,7 +6,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class DeleteLocationModel : PageModel
-    {
+    {//Deletes a Location
         private readonly LocationService _locationService;
 
         public DeleteLocationModel(LocationService locationService)

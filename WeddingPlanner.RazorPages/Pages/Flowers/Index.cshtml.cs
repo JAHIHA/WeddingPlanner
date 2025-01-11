@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Flowers
 {
     public class IndexFlowerModel : PageModel
-    {
+    {//Show all available Flowers
 
         private readonly FlowerService _flowerService;
         private readonly SessionManager _sessionManager;

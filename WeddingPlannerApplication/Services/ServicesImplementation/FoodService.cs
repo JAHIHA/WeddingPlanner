@@ -10,7 +10,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesImplementation
 {
     public class FoodService : IFoodService
-    {
+    {// Services for Food with CRUD  methods
         private readonly IFoodRepo _foodRepo;
         public FoodService(IFoodRepo foodRepo)
         {

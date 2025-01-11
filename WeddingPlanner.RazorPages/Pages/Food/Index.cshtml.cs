@@ -9,7 +9,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class IndexFoodModel : PageModel
-    {
+    {//Show all available Foods
         private readonly FoodService _foodService;
         private readonly SessionManager _sessionManager;
 

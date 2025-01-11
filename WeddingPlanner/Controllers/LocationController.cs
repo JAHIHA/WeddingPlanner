@@ -13,7 +13,7 @@ namespace WeddingPlanner.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     public class LocationController : Controller
-    {
+    {//Location API with CRUD methods
         private readonly ILocationService _locationService;
 
         public LocationController(ILocationService locationService)

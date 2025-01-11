@@ -6,7 +6,7 @@ using System.Text;
 namespace WeddingPlanner.RazorPages.Pages.Auth
 {
     public class SessionManager
-    {
+    {//Session Manger with token, validation authentication and authorization
         private readonly IConfiguration _configuration;
         private JwtSecurityToken _jwtToken;
         public string stringToken {get; private set;}

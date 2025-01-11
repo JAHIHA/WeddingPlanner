@@ -6,7 +6,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class UserServiceR
-    {
+    {//Services for User that connect to the controller
         
        
             private readonly HttpClient _httpClient;

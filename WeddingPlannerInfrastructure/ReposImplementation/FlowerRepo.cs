@@ -11,7 +11,7 @@ using WeddingPlannerInfrastructure.DB;
 namespace WeddingPlannerInfrastructure.ReposImplementation
 {
     public class FlowerRepo : IFlowerRepo
-    {
+    {// Repo for Flower with CRUD  methods
         private readonly AppDbContext _dbContext;
 
         public FlowerRepo(AppDbContext dbContext)

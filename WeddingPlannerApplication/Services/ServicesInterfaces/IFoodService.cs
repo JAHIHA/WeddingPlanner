@@ -9,7 +9,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesInterfaces
 {
     public interface IFoodService
-    {
+    {// Interfaces-service for Food with CRUD  methods
         Task<List<Food>> ListAsync();
         Task<ActionResponse<Food>> AddAsync(Food newFood);
         Task<ActionResponse<Food>> UpdateAsync(int id, Food updateFood);

@@ -12,7 +12,7 @@ namespace WeddingPlanner.Controllers
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class FoodController : Controller
-    {
+    {//Food API with CRUD methods
         private readonly IFoodService _foodService;
         public FoodController(IFoodService foodService)
         {

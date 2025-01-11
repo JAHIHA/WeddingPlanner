@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WeddingPlannerDomain.Entities
-{
+{//Model for Admin
     public class Admin
     {
         public int Id { get; set; }

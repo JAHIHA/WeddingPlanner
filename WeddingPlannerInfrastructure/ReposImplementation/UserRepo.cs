@@ -12,7 +12,7 @@ using WeddingPlannerInfrastructure.DB;
 namespace WeddingPlannerInfrastructure.ReposImplementation
 {
     public class UserRepo : IUserRepo
-    {
+    {// Repo for User with CRUD and FindbyEmail method
 
         private readonly AppDbContext _dbContext;
 

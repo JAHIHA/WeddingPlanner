@@ -4,7 +4,7 @@ using System.Text;
 namespace WeddingPlanner.Helpers
 {
     public class PasswhordHash
-    {
+    {//Hashing the Password to made it difficult to crack
         public string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())

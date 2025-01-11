@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WeddingPlannerDomain.Entities
-{
+{//Model for User
     public class User
     {
         public int Id { get; set; }

@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class ViewModel : PageModel
-    {
+    {//View a user personal data
         private readonly UserServiceR _userService;
         private readonly SessionManager _sessionManager;
 

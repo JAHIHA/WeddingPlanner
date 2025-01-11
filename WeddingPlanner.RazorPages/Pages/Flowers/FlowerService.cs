@@ -6,7 +6,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Flowers
 {
     public class FlowerService
-    {
+    {//Services that connect to the controller with HTTP requests
         private readonly HttpClient _httpClient;
         public readonly SessionManager _sessionManager;
         public FlowerService(IHttpClientFactory httpClientFactory, SessionManager sessionManager)

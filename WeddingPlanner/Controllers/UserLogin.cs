@@ -15,7 +15,7 @@ namespace WeddingPlanner.Controllers
     [ApiController]
     [Produces("application/json")]
     public class UserLogin : Controller
-    {
+    {//User Login where there is a check with the JWT bearer
         private readonly IConfiguration _configuration;
         private readonly IUserService _userService;
       

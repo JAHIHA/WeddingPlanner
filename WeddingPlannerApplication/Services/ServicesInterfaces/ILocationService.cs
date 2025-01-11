@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesInterfaces
 {
     public interface ILocationService
-    {
+    {// Interfaces-service for Location with CRUD  methods
         Task<List<Location>> ListAsync();
         Task<ActionResponse<Location>> AddAsync(Location newLocation);
         Task<ActionResponse<Location>> UpdateAsync(int id, Location updateLocation);

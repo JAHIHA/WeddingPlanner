@@ -7,7 +7,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class IndexModel : PageModel
-    {
+    {//Show all available Users
 
         private readonly UserServiceR _userService;
         private readonly SessionManager _sessionManager;

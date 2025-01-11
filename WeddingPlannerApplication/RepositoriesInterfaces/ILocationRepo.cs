@@ -9,7 +9,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.RepositoriesInterfaces
 {
     public interface ILocationRepo
-    {
+    {//Interface Repo for Location
         Task<List<Location>> ListAsync();
         Task<Location> AddAsync(Location newLocation);
         Task<Location> UpdateAsync(int id, Location updatedLocation);

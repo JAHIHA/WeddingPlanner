@@ -14,7 +14,7 @@ using WeddingPlanner.Helpers;
 namespace WeddingPlanner.Tests
 {
     public class UserServiceTests
-    {
+    {//Mock tests for user
         private readonly Mock<IUserRepo> _userRepoMock;
         private readonly UserService _userService;
 

@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class IndexLocationModel : PageModel
-    {
+    {//Show all available Locations
         private readonly LocationService _locationService;
         private readonly SessionManager _sessionManager;
 

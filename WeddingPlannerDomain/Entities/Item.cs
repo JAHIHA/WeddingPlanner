@@ -1,5 +1,5 @@
 ﻿namespace WeddingPlannerDomain
-{
+{//Model for Item
     public class Item
     {
         public int Id { get; set; }

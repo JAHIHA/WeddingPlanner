@@ -14,7 +14,7 @@ namespace WeddingPlanner.Controllers
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
         public class UserController : Controller
-        {
+        {//User API with CRUD methods
             private readonly IUserService _service;
             public UserController(IUserService service)
             {

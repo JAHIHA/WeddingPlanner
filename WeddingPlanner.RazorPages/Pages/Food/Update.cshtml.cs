@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class UpdateFoodModel : PageModel
-    {
+    {// Updates the properties of a Food
         private readonly FoodService _foodService;
 
         public UpdateFoodModel(FoodService foodService)

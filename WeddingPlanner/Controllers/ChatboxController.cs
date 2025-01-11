@@ -7,7 +7,7 @@ namespace WeddingPlanner.Controllers
     [ApiController]
     [Route("/chatbox")]
     public class ChatboxController : ControllerBase
-    {
+    {//Chatbox controller(simple) with predetermined questions and answers
         private readonly ILogger<ChatboxController> _logger;
 
         public ChatboxController(ILogger<ChatboxController> logger)

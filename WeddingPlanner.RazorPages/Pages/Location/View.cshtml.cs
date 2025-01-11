@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class ViewLocationModel : PageModel
-    {
+    {//View a location's details
         private readonly LocationService _locationService; 
 
         public ViewLocationModel(LocationService locationService)

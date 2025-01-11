@@ -7,8 +7,8 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
 {
     
         public class ViewFlowerModel : PageModel
-        {
-            private readonly FlowerService _flowerService;
+    {//View a flower's details
+        private readonly FlowerService _flowerService;
 
             
             public ViewFlowerModel(FlowerService flowerService)

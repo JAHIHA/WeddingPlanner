@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WeddingPlannerDomain.Entities
-{
+{// Model for Location
     public class Location : Item
     {
         public string StreetName { get; set; }

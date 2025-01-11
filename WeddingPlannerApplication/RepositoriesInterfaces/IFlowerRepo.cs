@@ -8,7 +8,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlannerApplication.RepositoriesInterfaces
 {
     public interface IFlowerRepo
-    {
+    {//Interface Repo for Flower
         Task<List<Flower>> ListAsync();
         Task<Flower> AddAsync(Flower newFlower);
         Task<Flower> UpdateAsync(int id, Flower updatedFlower);

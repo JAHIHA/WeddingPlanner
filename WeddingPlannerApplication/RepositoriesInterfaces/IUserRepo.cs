@@ -9,7 +9,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.RepositoriesInterfaces
 {
     public interface IUserRepo
-    {
+    {//Interface Repo for User
         Task<List<User>> ListAsync();
         Task<User> AddAsync(User newUser);
         Task<User> UpdateAsync(int id, User updatedUser);

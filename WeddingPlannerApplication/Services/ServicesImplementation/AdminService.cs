@@ -11,7 +11,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesImplementation
 {
     public class AdminService : IAdminService
-    {
+    {// Services for Admin with CRUD, verify Password and FindbyEmail methods
         private readonly IAdminRepo _adminRepo;
         public AdminService(IAdminRepo adminRepo)
         {

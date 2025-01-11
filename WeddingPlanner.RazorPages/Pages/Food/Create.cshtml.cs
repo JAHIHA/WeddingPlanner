@@ -6,7 +6,7 @@ using WeddingPlanner.RazorPages.Pages.Auth;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class CreateFoodModel : PageModel
-    {
+    {//Creates a Food
         private readonly FoodService _foodService;
         private readonly SessionManager _sessionManager;
         public CreateFoodModel(FoodService foodService, SessionManager sessionManager)

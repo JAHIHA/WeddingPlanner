@@ -7,7 +7,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Food
 {
     public class DeleteFoodModel : PageModel
-    {
+    {//Deletes a Food
         private readonly FoodService _foodService;
 
         public DeleteFoodModel(FoodService foodService)

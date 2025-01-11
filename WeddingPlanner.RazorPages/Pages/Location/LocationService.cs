@@ -7,7 +7,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class LocationService
-    {
+    {//Services for Location that connect to the controller
         private readonly HttpClient _httpClient;
         public readonly SessionManager _sessionManager;
 

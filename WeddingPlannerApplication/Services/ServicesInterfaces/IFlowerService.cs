@@ -8,7 +8,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlannerApplication.Services.ServicesInterfaces
 {
     public interface IFlowerService
-    {
+    {// Interfaces-service for Flower with CRUD  methods
         Task<List<Flower>> ListAsync();
         Task<ActionResponse<Flower>> AddAsync(Flower newFlower);
         Task<ActionResponse<Flower>>UpdateAsync(int id, Flower updateFlower);

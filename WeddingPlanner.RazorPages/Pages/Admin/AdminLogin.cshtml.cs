@@ -7,7 +7,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Admin
 {
     public class AdminLoginModel : PageModel
-    {
+    {//Admin Login where the token is checked for authorization and login
         private readonly AuthService _authService;
         private readonly SessionManager _sessionManager;
         public AdminLoginModel(AuthService authService, SessionManager sessionManager)

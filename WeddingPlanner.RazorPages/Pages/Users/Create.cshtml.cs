@@ -6,7 +6,7 @@ using WeddingPlanner.RazorPages.Pages.Auth;
 namespace WeddingPlanner.RazorPages.Pages.Users
 {
     public class CreateModel : PageModel
-    {
+    {//Creates a User (register)
         private readonly AuthService _authService;
         private readonly SessionManager _sessionManager;
         public CreateModel(AuthService authService, SessionManager sessionManager)

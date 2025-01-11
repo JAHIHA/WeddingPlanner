@@ -8,7 +8,7 @@ using WeddingPlannerDomain.Entities;
 namespace WeddingPlannerApplication.Services.ServicesInterfaces
 {
     public interface IAdminService
-    {
+    {// Interfaces-service for Admin with CRUD, verify Password and FindbyEmail methods
         Task<List<Admin>> ListAsync();
         Task<ActionResponse<Admin>> AddAsync(Admin newAdmin);
         Task<ActionResponse<Admin>> UpdateAsync(int id, Admin updateAdmin);

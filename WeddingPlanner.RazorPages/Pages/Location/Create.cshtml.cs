@@ -9,7 +9,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class CreateLocationModel : PageModel
-    {
+    {//Creates a Location
         private readonly LocationService _locationService;
         private readonly SessionManager _sessionManager; 
         public CreateLocationModel(LocationService locationService, SessionManager sessionManager)

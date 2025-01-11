@@ -8,7 +8,7 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
   
     
         public class UpdateFlowerModel : PageModel
-        {
+    {// Updates the properties of a Flower
         private readonly FlowerService _flowerService;
 
         public UpdateFlowerModel(FlowerService flowerService)

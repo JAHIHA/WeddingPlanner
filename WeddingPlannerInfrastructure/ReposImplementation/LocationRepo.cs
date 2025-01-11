@@ -11,7 +11,7 @@ using WeddingPlannerInfrastructure.DB;
 namespace WeddingPlannerInfrastructure.ReposImplementation
 {
     public class LocationRepo : ILocationRepo
-    {
+    {// Repo for Location with CRUD  methods
         private readonly AppDbContext _dbContext;
 
         public LocationRepo(AppDbContext dbContext)

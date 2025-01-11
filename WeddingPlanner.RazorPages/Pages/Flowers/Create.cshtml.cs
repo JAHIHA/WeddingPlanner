@@ -9,7 +9,7 @@ namespace WeddingPlanner.RazorPages.Pages.Flowers
 {
 
     public class CreateFlowerModel : PageModel
-    {
+    {//Creates a Flower
         private readonly FlowerService _flowerService;
         private readonly SessionManager _sessionManager;
 

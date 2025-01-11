@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WeddingPlannerApplication
 {
     public class ActionResponse<TModel>
-    {
+    {// custom ActionResult to keep better track of the Errors
 
         public TModel? Model { get; private set; }
         public bool IsSuccess { get; private set; }

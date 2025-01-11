@@ -6,7 +6,7 @@ using WeddingPlannerDomain;
 namespace WeddingPlanner.RazorPages.Pages.Location
 {
     public class UpdateLocationModel : PageModel
-    {
+    {// Updates the properties of a Location
         private readonly LocationService _locationService;
 
         public UpdateLocationModel(LocationService locationService)
