@@ -12,7 +12,7 @@ using Microsoft.OpenApi.Models;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//Scoped Services
 builder.Services.AddScoped<IFlowerService, FlowerService>();
 builder.Services.AddScoped<IFlowerRepo, FlowerRepo>();
 
